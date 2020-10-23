@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://ip4106591268.mobgslb.tbcache.com/Firmware/Flyme/16s/8.20.7.21/cn_daily/20200721002012/64687c0e/update.zip?ali_redirect_domain=download.meizu.com&ali_redirect_ex_ftag=6ea776497f709f5023776475d90620d61340f8188e4deda1&ali_redirect_ex_tmining_ts=1595326254&ali_redirect_ex_tmining_expire=3600&ali_redirect_ex_hot=100
+  ROM_URL: http://bigota.d.miui.com/9.9.3/miui_MI6X_9.9.3_3ad06bc283_9.0.zip
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -51,7 +51,7 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME -a
        
        - name: Zip GSI  
          run: |
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit final/GSI.zip
+              ./transfer wet final/GSI.zip
 
          
             
