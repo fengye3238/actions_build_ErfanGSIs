@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://bigota.d.miui.com/9.9.3/miui_MI6X_9.9.3_3ad06bc283_9.0.zip
-  ROM_NAME: MIUI
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/meizu17/8.21.2.3/cn_daily/20210203011322/a1b3e2e1/update.zip
+  ROM_NAME: Flyme
   TZ: Asia/Shanghai
 
 jobs:
@@ -51,7 +51,7 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME -a
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME -ab
        
        - name: Zip GSI  
          run: |
