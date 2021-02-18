@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://download.meizu.com/Firmware/Flyme/meizu17/8.21.2.3/cn_daily/20210203011322/a1b3e2e1/update.zip
-  ROM_NAME: Flyme
+  ROM_NAME: Pixel
   TZ: Asia/Shanghai
 
 jobs:
