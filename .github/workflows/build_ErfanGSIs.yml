@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://sysupwsdl.vivo.com.cn/upgrade/upload/UpdateFiles/20210110205350814cfdf7078b345d8cbb9a50a8da72fa.zip
-  ROM_NAME: Generic
+  ROM_URL: https://hugeota.d.miui.com/9.9.3/miui_MI6X_9.9.3_3ad06bc283_9.0.zip
+  ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
 jobs:
