@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: http://download.h2os.com/OnePlus7/OBT/OnePlus7Hydrogen_13.X.10_OTA_010_all_1909112309_03cc83f7610b4948.zip
+  ROM_URL: https://download.c.realme.com/osupdate/RMX2111_11_OTA_0270_all_BvDO0UMfTIg7.ozip
   ROM_NAME: OxygenOS
   TZ: Asia/Shanghai
 
