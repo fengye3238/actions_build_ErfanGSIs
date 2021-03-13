@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.c.realme.com/osupdate/RMX2111_11_OTA_0270_all_BvDO0UMfTIg7.ozip
-  ROM_NAME: OxygenOS
+  ROM_URL: https://download.meizu.com/Firmware/Flyme/meizu17_Pro/9.21.3.9/cn_daily/20210310172935/8919c87a/update.zip
+  ROM_NAME: Generic
   TZ: Asia/Shanghai
 
 jobs:
